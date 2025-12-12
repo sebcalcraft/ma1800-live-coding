@@ -1,0 +1,117 @@
+body {
+  margin: 16px;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+
+  background-image: radial-gradient(#333 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Fixed fake platform bar */
+#fixed {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  background: #111;
+  border: 1px solid #444;
+  padding: 6px;
+  font-size: 20px;
+}
+
+/* Fake UI badges */
+.badge {
+  display: inline-block;
+  padding: 3px 6px;
+  border: 1px solid #555;
+  background: #111;
+  color: #ccc;
+  margin-right: 4px;
+  text-transform: uppercase;
+}
+
+.for-you { color: #66ccff; border-color: #66ccff; }
+.live { color: #ff6666; border-color: #ff6666; }
+.sponsored { color: #66ffcc; border-color: #66ffcc; }
+.recommended { color: #ffcc66; border-color: #ffcc66; }
+
+/* Page container */
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Text blocks */
+.prompt {
+  border: 2px dashed #666;
+  padding: 10px;
+  margin: 20px 0;
+  background: #0b0b0b;
+}
+
+.post {
+  border: 1px solid #333;
+  padding: 12px;
+  margin: 14px 0;
+  background: #060606;
+}
+
+.post h2 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  color: #66ccff;
+}
+
+.small { color: #999; font-size: 12px; }
+.loud { color: #ff66cc; font-weight: bold; }
+
+/* Hover reveal */
+.hide {
+  opacity: 0;
+  transition: opacity .2s;
+}
+.post:hover .hide {
+  opacity: 1;
+}
+
+/* Load more */
+.loop {
+  text-align: center;
+  border: 1px solid #444;
+  padding: 14px;
+  margin: 24px 0;
+  background: #0a0a0a;
+}
+
+a {
+  color: #66ccff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Progressive degradation of the posts */
+.stage1  { opacity: 1; letter-spacing: 0; }
+.stage2  { opacity: .95; }
+.stage3  { opacity: .9; }
+.stage4  { opacity: .85; letter-spacing: .3px; }
+.stage5  { opacity: .8; letter-spacing: .5px; }
+.stage6  { opacity: .75; letter-spacing: .8px; }
+.stage7  { opacity: .7; letter-spacing: 1px; }
+.stage8  { opacity: .65; letter-spacing: 1.2px; }
+.stage9  { opacity: .6; letter-spacing: 1.4px; }
+.stage10 { opacity: .55; letter-spacing: 1.6px; }
+.stage11 { opacity: .5; letter-spacing: 1.8px; }
+.stage12 { opacity: .45; letter-spacing: 2px; }
+.stage13 { opacity: .42; letter-spacing: 2.2px; }
+.stage14 { opacity: .39; letter-spacing: 2.4px; }
+.stage15 { opacity: .36; letter-spacing: 2.6px; }
+.stage16 { opacity: .33; letter-spacing: 2.8px; }
+.stage17 { opacity: .3; letter-spacing: 3px; }
+.stage18 { opacity: .27; letter-spacing: 3.2px; }
+.stage19 { opacity: .24; letter-spacing: 3.4px; }
+.stage20 { opacity: .2; letter-spacing: 3.6px; }
